@@ -1,5 +1,7 @@
 //jshint esversion: 6
 
+require('dotenv').config(); // Load environment variables from .env file
+
 const express = require("express");
 const https = require("https");
 const request = require("request");
@@ -40,7 +42,7 @@ app.get("/", function(req, res) {
 
         const options = {
             method: "POST",
-            auth: "emislim:79d1b34f715110d0e41ec99e7880c0f4-us18",
+            auth: "emislim:" + process.env.API_KEY //environment variable for API key
 
         };
             
