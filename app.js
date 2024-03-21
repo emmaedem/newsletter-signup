@@ -68,5 +68,3 @@ app.listen(process.env.PORT || 3000, function (req, res) {
 
 });
 
-//79d1b34f715110d0e41ec99e7880c0f4-us18//
-//6650c21115//
